@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+<body>
+<div class="container">
+<div class="blocktotal">
+<div class="blockone">
+<h1 class="title">Bascula de Masa</h1>
+<h3 class="title2">Peso</h3><input class="inputPeso" type="text"id=peso> 
+<h3 class="title2">Altura</h3><input class="inputAltura" type="text" id="altura">
+<button class="button_calcular" id="button_calcular" onclick="calcular()">Calcular</button>
+<button class="button_reiniciar" id="button_reiniciar" onclick="reiniciar()">Reiniciar</button>
+</div>
+<div class="blocktwo">
+<h3 class="title2">Resultados</h3>
+<div class="container_resultado" id="blockresul"></div>
+    <div class="gauge">
+        <div class="parent">
+            <div class="child" id="child">
+            </div>
+        </div>
+</div>
+</div>
+</div>
+</div>
+<script src="./main.js"></script>
+</body>
+</html>

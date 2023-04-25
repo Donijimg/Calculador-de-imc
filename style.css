@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;700&display=swap');
+
+
+*{
+    margin:0; 
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body{
+   height: 100%;
+   width: 100%;
+   font-size:18px;
+}
+body{
+background-repeat: no-repeat; 
+font-family: 'Open Sans', sans-serif;
+}
+
+.container{
+width: 100%;
+height: 100%;
+background-color: rgb(255, 255, 255);
+display: flex;
+justify-content: center;
+align-items: center;
+
+}
+.blocktotal{
+    width:70%;
+    height:70%;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px 1px;
+    display: flex;
+}
+.blockone{
+    width:40%;
+    height:100%;
+    background-color:rgb(171, 215, 253);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 50px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.title{
+    font-size: 35px;
+    color: aliceblue;
+}
+.title2{
+    font-size: 20px;
+    color:aliceblue;
+}
+.inputPeso{
+width: 40%;
+color: lightskyblue;
+font-size: 30px;
+height: 250px;
+border: none;
+border-radius: 5px;
+}
+.inputAltura{
+width: 40%;
+color: lightskyblue;
+height: 250px;
+font-size: 30px;
+border: none;
+border-radius: 5px;
+}
+
+
+.button_calcular{
+    width: 40%;
+    height: 250px;
+    font-size: 23px;
+    color:aliceblue;
+    background-color:dodgerblue;
+    border: none;
+    border-radius: 5px;
+}
+.button_calcular:hover{
+
+    font-size: 23px;
+    color: white;
+    background-color:royalblue;
+
+}
+
+.button_reiniciar{
+    width: 40%;
+    height: 250px;
+    font-size: 23px;
+    color:aliceblue;
+    background-color:dodgerblue;
+    border: none;
+    border-radius: 5px;
+}
+.button_reiniciar:hover{
+
+    font-size: 23px;
+    color:white;
+    background-color:royalblue;
+
+}
+
+.blocktwo{
+    padding-top:5%;
+    width:60%;
+    height:100%;
+    background-color:rgb(171, 215, 253);
+    display: flex;
+    align-items: center;
+    gap: 10%;
+    flex-direction: column;
+}
+.container_resultado{
+    width: 40%;
+    height: 10%;
+    overflow: hidden;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    color: lightskyblue;
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: white;
+}
+
+.contenedor__imagenResultado {
+    height: 45vh;
+    width: 30vw;
+}
+
+
+/* --------------- INICIO MEDIDOR IMC ---------------*/
+
+.gauge {
+    margin-top: 10px;
+    background: 
+    radial-gradient( circle at bottom center, black 50px, #5555, transparent 53px), /*Pedazos de pizza*/
+    conic-gradient( from 4.2rad at 50% 100%, rgb(0, 255, 255) 0deg 72deg, #2aee4b 72deg 119.3deg, #dde027 119.3deg 165deg, #d31208 165deg);
+    box-shadow: 0 0 0 6px rgba(255, 255, 255, 0.09), 0 0 35px 5px rgba(255, 255, 255, 0.29);
+    width: 65%;
+    height: 40%;
+    border-radius: 50vw 50vw 0 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.parent {
+    display: grid;
+    place-items: center;
+    height: 100%;
+    position: relative;
+}
+
+.child {
+    width: 20px;
+    height: 70%;
+    border-radius: 50% 50% 10% 10%;
+    background: black;
+    transform: 50% 50% 0;
+    position: absolute;
+    bottom: 10px;
+    rotate: -90deg;
+    transition: all 1s;
+    transform-origin: center bottom;
+}
